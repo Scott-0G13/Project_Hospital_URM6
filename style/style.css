@@ -963,6 +963,130 @@ textarea{
 .infort:hover{
     transform: translateY(-5px)
 }
+.container-m{
+    max-width: 1200px;
+    padding: 24px;
+    margin: 0 auto;
+}
+.annonces-m{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.card-m{
+    max-width: 360px;
+}
+.annonces-m img{
+    width: 100%;
+    border-radius: 12px;
+}
+.texte-annonces{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.texte-annonces h4{
+    color: #0a2540;
+    font-size: 22px;
+}
+.texte-annonces button{
+    width: fit-content;
+}
+.texte-annonces span,.card-grid{
+    font-weight: 600;
+}
+.badge{
+    display: inline-block;
+    background-color: #FEE2E2;
+    color: #DC2626;
+    padding: 4px 8px;
+    border-radius: 999px;
+    font-size: 12px;
+    margin-top: 8px;
+    width: fit-content;
+}
+.badge-urgent{
+    background-color: #FEE2E2;
+    color: #DC2626;
+}
+.texte-annonces p{
+    color: #6B7280;
+    text-align: justify;
+}
+.badge-info{
+    background-color: #DBEAFE;
+    color: #1D4ED8;
+}
+.badge-prevention{
+    background-color: #DCFCE7;
+    color: #15803D;
+}
+.badge-campagne{
+    background-color: #F3E8FF;
+    color: #7C3AED;
+}
+.badge-evenement{
+    background-color: #DBEAFE;
+    color: #1D4ED8;
+}
+.badge-annonces{
+    background-color: #FEE2E2;
+    color: #DC2626;
+}
+.container-f{
+    max-width: 1200px;
+    padding: 12px;
+}
+.filtre{
+    max-width: 100%;
+    border: 2px solid #2563EB;
+    border-radius: 999px;
+    padding: 12px;
+    margin-bottom: 24px;
+}
+.filtre-m{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x:auto;
+}
+.btn-filtre{
+    background-color: #fff;
+    border-radius: 999px;
+    border: 1px solid #e5e7eb;
+    display: inline-flex;
+    align-items: center;
+    margin: 4px;
+    padding: 8px;
+    flex-shrink: 0;
+}
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 12px;
+    padding: 12px;
+}
+.card-grid .card{
+    border: none;
+    padding: 4px;
+}
+.date{
+    color: #94A3B8;
+    font-style: italic;
+    font-weight: 400;
+}
+.resume{
+    color: #4a5568;
+}
+.card-grid .cta{
+    margin-top: 24px;
+}
 /* Page 9 */
 .logo-contact{
     font-size: 20px;
@@ -1089,6 +1213,19 @@ textarea{
 /* Responsive */
 
 @media (min-width:768px){
+    .filtre{
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .filtre-m{
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow-x: visible;
+    }
+    .btn-filtre{
+        flex-shrink: 1;
+    }
     .toggle{
         display: none;
     }
