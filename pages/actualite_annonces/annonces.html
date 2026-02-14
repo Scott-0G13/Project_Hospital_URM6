@@ -44,69 +44,99 @@
                 <span class="badge badge-urgent">Urgent</span>
                 <h4>Nouvelle campagne de vaccination contre la grippe</h4>
                 <p>Nous sommes heureux d’annoncer le lancement de notre campagne annuelle de vaccination contre la grippe. Protégez-vous et vos proches en vous faisant vacciner dès aujourd’hui !</p>
-                <button class="cta">voir plus</button>
+                <button class="cta show-more">voir plus</button>
+                <div class="extra-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+                    <p>Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
+                    <p><a href="#" class="close-more">Fermer</a></p>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="container-f">
         <div class="filtre">
-        <div class="filtre-m">
-            <button class="btn-filtre">Tout</button>
-            <button class="btn-filtre">annonces</button>
-            <button class="btn-filtre">Événements</button>
-            <button class="btn-filtre">Conseils</button>
-            <button class="btn-filtre">Campagne</button>
+            <div class="filtre-m">
+            <button class="btn-filtre" data-filter="all">Tout</button>
+            <button class="btn-filtre" data-filter="annonces">annonces</button>
+            <button class="btn-filtre" data-filter="evenement">Événements</button>
+            <button class="btn-filtre" data-filter="conseils">Conseils</button>
+            <button class="btn-filtre" data-filter="campagne">Campagne</button>
         </div>
     </div>
     </div>
 
     <div class="card-grid">
-        <div class="card">
+        <div class="card" data-category="info">
             <img src="../../ressources/docteur-noir-professionnel-joyeux-souriant-camera-bras-croises_116547-85081.avif" alt="image-card">
             <span class="badge badge-info">Info</span>
             <p class="date">10/12/2025</p>
             <p class="resume">Teste disponible pour tous les patiens sans rendez-vous</p>
-            <button class="cta">voir details</button>
+            <button class="cta show-more">voir details</button>
+            <div class="extra-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
+                <p><a href="#" class="close-more">Fermer</a></p>
+            </div>
         </div>
-        <div class="card">
+        <div class="card" data-category="prevention">
             <img src="../../ressources/docteur-noir-professionnel-joyeux-souriant-camera-bras-croises_116547-85081.avif" alt="image-card">
             <span class="badge badge-prevention">Prevention</span>
             <p class="date">10/12/2025</p>
             <p class="resume">Teste disponible pour tous les patiens sans rendez-vous</p>
-            <button class="cta">voir details</button>
+            <button class="cta show-more">voir details</button>
+            <div class="extra-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
+                <p><a href="#" class="close-more">Fermer</a></p>
+            </div>
         </div>
-        <div class="card">
+        <div class="card" data-category="campagne">
             <img src="../../ressources/docteur-noir-professionnel-joyeux-souriant-camera-bras-croises_116547-85081.avif" alt="image-card">
             <span class="badge-campagne badge">Campagne</span>
             <p class="date">10/12/2025</p>
             <p class="resume">Teste disponible pour tous les patiens sans rendez-vous</p>
-            <button class="cta">voir details</button>
+            <button class="cta show-more">voir details</button>
+            <div class="extra-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
+                <p><a href="#" class="close-more">Fermer</a></p>
+            </div>
         </div>
-        <div class="card">
+        <div class="card" data-category="annonces">
             <img src="../../ressources/docteur-noir-professionnel-joyeux-souriant-camera-bras-croises_116547-85081.avif" alt="image-card">
             <span class="badge badge-annonces">Annonces</span>
             <p class="date">10/12/2025</p>
             <p class="resume">Teste disponible pour tous les patiens sans rendez-vous</p>
-            <button class="cta">voir details</button>
+            <button class="cta show-more">voir details</button>
+            <div class="extra-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
+                <p><a href="#" class="close-more">Fermer</a></p>
+            </div>
         </div>
-        <div class="card">
+        <div class="card" data-category="info">
             <img src="../../ressources/docteur-noir-professionnel-joyeux-souriant-camera-bras-croises_116547-85081.avif" alt="image-card">
             <span class="badge badge-info">Info</span>
             <p class="date">10/12/2025</p>
             <p class="resume">Teste disponible pour tous les patiens sans rendez-vous</p>
-            <button class="cta">voir details</button>
+            <button class="cta show-more">voir details</button>
+            <div class="extra-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
+                <p><a href="#" class="close-more">Fermer</a></p>
+            </div>
         </div>
-        <div class="card">
+        <div class="card" data-category="evenement">
             <img src="../../ressources/docteur-noir-professionnel-joyeux-souriant-camera-bras-croises_116547-85081.avif" alt="image-card">
             <span class="badge badge-evenement">Evenement</span>
             <p class="date">10/12/2025</p>
             <p class="resume">Teste disponible pour tous les patiens sans rendez-vous</p>
-            <button class="cta">voir details</button>
+            <details class="card-details">
+                <summary class="cta">voir details</summary>
+                <div class="extra-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
+                </div>
+            </details>
         </div>
     </div>
 
-
+    
     <footer>
         <div class="container-footer">
             <div class="grid-footer">
