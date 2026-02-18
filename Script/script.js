@@ -129,3 +129,14 @@ document.addEventListener('click', function(e){
         });
     }));
 })();
+function reveal(){
+    var reveals = document.querySelectorAll(".reveal");
+    reveals.forEach(reveal => {
+        const revealTop = reveal.getBoundingClientRect().top;
+        const revealWindow = window.innerHeight / 1.3;
+        if(revealTop < revealWindow){
+            reveal.classList.add("active");
+        }
+    });
+}
+window.addEventListener("scroll",reveal);
