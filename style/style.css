@@ -919,8 +919,19 @@ textarea{
     padding: 24px;
 }
 .actualite h2{
-    color: #0a2540;
-
+    color: #111;
+    font-weight: bold;
+}
+.date{
+    margin-top: 8px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;}
+.date img{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
 }
 .actualite p{
     color: #4a5568;
@@ -1020,6 +1031,7 @@ textarea{
 }
 .card-grid .card{
     overflow-y: auto;
+    
 }
 .texte-annonces h4{
     color: #0a2540;
@@ -1163,6 +1175,15 @@ textarea{
 }
 .resume{
     color: #4a5568;
+    margin-top: 8px;
+}
+.badge-relative{
+    position: relative;
+}
+.badge-relative .badge{
+    position: absolute;
+    top: 8px;
+    left: 8px;
 }
 .card-grid .cta{
     margin-top: 24px;
